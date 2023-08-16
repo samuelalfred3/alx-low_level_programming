@@ -1,17 +1,21 @@
 #include "main.h"
 
 /**
- * _islower - Checks for lowercase character
- * @c: The character to be checked
- * Return: for lowercase character or 0 for anything else
+ * print_last_digit - Prints the last digit of a number
+ * @n: The number to be treated
+ * Return: Value of the last digit of a number
  */
 
-int _islower(int c)
+int print_last_digit(int n)
 
 {
-	if (c >= 97 && c <= 122)
+	int last;
+
+	last = n % 10;
+	if (last < 0)
 	{
-		return (1);
+		last = last * -1;
 	}
-	return (0);
+	_putchar(last + '0');
+	return (last);
 }
