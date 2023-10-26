@@ -1,1 +1,1 @@
-0x02. C - Functions, nested loops
+Low Level Programming & Algorithm Projects
